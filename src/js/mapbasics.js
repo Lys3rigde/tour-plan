@@ -10,8 +10,12 @@ function init () {
         // При инициализации карты обязательно нужно указать
         // её центр и коэффициент масштабирования.
         center: [7.573272, 79.803904], // Москва
-        zoom: 10
+        zoom: 10,
     }, {
         searchControlProvider: 'yandex#search'
     });
+    myMap.behaviors.disable('scrollZoom')
+    myMap.events.add('click', function(){
+    myMap.behaviors.enable('scrollZoom')
+    })
   }
