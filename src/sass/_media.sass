@@ -21,10 +21,10 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      margin-left: 47.25px
+      margin-right: 73px
     &-menu
-      padding-top: 22px
-      padding-bottom: 22px
+      padding: 22px 13.5px
       &__link
         font-size: 12px
         line-height: 15px
@@ -32,6 +32,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
@@ -41,14 +42,30 @@
     &-slider
       width: 100%
   .booking
+    padding: 28px 22px
     width: 340px
+    height: 210px
   .map
     width: 340px
+    height: 210px
   .reviews
     &-slider
       &__item
         max-width: 580px
-@media (max-width: 768px)
+      &__button
+        top: 50%
+        transform: translateY(-50%)
+        &--prev
+          left: 0px
+        &--next
+          right: 0px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 51px
+  .newsletter
+    padding: 92px 0 93px 0
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -130,16 +147,66 @@
           margin-right: -85px
           transform: translate(50%, 0)
 @media (max-width: 576px)
+  .container
+    max-width: 280px
   .logo
     width: 99px
+  .navbar-top
+    padding-top: 28px
+    padding-bottom: 29px
   .hotel
+    padding-top: 0px
+    padding-bottom: 40px
+    &-info
+      padding-bottom: 38px
+      &__description
+        margin: 0
+    &-right
+      min-height: 403px
+      padding-bottom: 0px
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      height: 180px
+  .map
+    height: 173px
+  .stars
+    padding: 4px 15px 0 0
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 76px 20px 83px 20px
+    &__subscribe
+      width: 280px
+    &-wrapper
+      margin: 0
     &__title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
       margin-bottom: 37px
+    &-title
+      &__strong
+        margin-top: 5px
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
   .subscribe
-    width: 100%
+    &__input
+      padding-left: 20px
+  .reviews
+    &__title
+      width: 245px
+      margin: auto
+      margin-bottom: 42px
+    &-slider
+      &__profile
+        margin-bottom: 33px
+      &__button
+        top: 30px
+        &--prev
+          left: 46%
+          transform: translate(-45%, 0)
+        &--next
+          right: 49%
+          transform: translate(45%, 0)
+      &__text
+        text-align: left
