@@ -876,11 +876,22 @@ img {
 
 .subscribe__button {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   right: 0;
   top: 0;
   min-width: 65px;
+  max-width: 65px;
   height: 100%;
   border: none;
+  outline: none;
   background-color: #EC1F46;
   color: #fff;
   overflow: hidden;
