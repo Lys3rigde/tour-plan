@@ -848,8 +848,8 @@ img {
   display: grid;
   width: 1110px;
   -ms-grid-rows: 500px 500px;
-  -ms-grid-columns: 1fr  1fr 1fr;
-      grid-template: 500px 500px / 1fr  1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 500px 500px / 1fr 1fr 1fr;
       grid-template-areas: "first first second" "third fourth fifth";
   row-gap: 30px;
   -webkit-column-gap: 30px;
@@ -1481,6 +1481,13 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .packages-wrapper {
+    width: 960px;
+  }
+  .main__image {
+    min-width: 266px;
+    max-width: 266px;
+  }
   .card {
     width: 230px;
     height: 230px;
@@ -1491,6 +1498,17 @@ img {
   .container,
   .newsletter-wrapper {
     max-width: 700px;
+  }
+  .packages-wrapper {
+    max-width: 700px;
+    -ms-grid-rows: 500px 500px 500px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 500px 500px 500px / 1fr 1fr;
+        grid-template-areas: "first first" "second third" "fourth fifth";
+  }
+  .main__image {
+    min-width: 350px;
+    max-width: 350px;
   }
   .logo {
     width: 132px;
@@ -1586,6 +1604,18 @@ img {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .packages-wrapper {
+    max-width: 576px;
+  }
+  .main__image {
+    min-width: 285px;
+    max-width: 285px;
+  }
+  .main-booking__info {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -1711,6 +1741,116 @@ img {
 @media (max-width: 576px) {
   .container {
     max-width: 280px;
+  }
+  .packages-wrapper {
+    max-width: 100%;
+    -ms-grid-rows: (500px)[5];
+    -ms-grid-columns: (100%)[5];
+        grid-template: repeat(5, 500px)/repeat(5, 100%);
+        grid-template-areas: "first" "second" "third" "fourth" "fifth";
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 8px;
+  }
+  .main__image {
+    min-width: 100%;
+    max-width: 100%;
+    height: 50%;
+  }
+  .main-booking {
+    padding: 30px 21px 25px 32px;
+    height: 50%;
+  }
+  .main-booking__title {
+    margin-bottom: 15px;
+  }
+  .main-booking__info {
+    display: none;
+  }
+  .main-booking__room {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .main-booking__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+  }
+  .main-booking__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .main-booking__order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .main-booking__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-booking__value--old {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+  }
+  .main-booking__value--new {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .secondary__image {
+    min-width: 100%;
+    max-width: 100%;
+    height: 50%;
+  }
+  .secondary-booking {
+    height: 50%;
+  }
+  .offer__main {
+    top: 30px;
+    padding: 4px 9px;
+    font-size: 8px;
+    line-height: 10px;
   }
   .logo {
     width: 99px;

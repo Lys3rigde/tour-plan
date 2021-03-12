@@ -10,6 +10,13 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .packages
+    &-wrapper
+      width: 960px
+  .main
+    &__image
+      min-width: 266px
+      max-width: 266px
   .card
     width: 230px
     height: 230px
@@ -17,6 +24,15 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .packages
+    &-wrapper
+      max-width: 700px
+      grid-template: 500px 500px 500px / 1fr 1fr
+      grid-template-areas: "first first" "second third" "fourth fifth"
+  .main
+    &__image
+      min-width: 350px
+      max-width: 350px
   .logo
     width: 132px
   .navbar
@@ -82,6 +98,18 @@
   .container
     max-width: 576px
     width: 92%
+  .packages
+    &-wrapper
+      max-width: 576px
+  .main
+    &__image
+      min-width: 285px
+      max-width: 285px
+    &-booking
+      &__info
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 25px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -164,6 +192,73 @@
 @media (max-width: 576px)
   .container
     max-width: 280px
+  .packages
+    &-wrapper
+      max-width: 100%
+      grid-template: repeat(5, 500px) / repeat(5, 100%)
+      grid-template-areas: "first" "second" "third" "fourth" "fifth"
+      column-gap: 0px
+  .main
+    flex-direction: column
+    border-radius: 8px
+    &__image
+      min-width: 100%
+      max-width: 100%
+      height: 50%
+    &-booking
+      padding: 30px 21px 25px 32px
+      height: 50%
+      &__title
+        margin-bottom: 15px
+      &__info
+        display: none
+      &__room
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 24px
+      &__icon
+        width: 14px
+        height: 14px
+        margin-right: 15px
+      &__text
+        display: flex
+        align-items: center
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
+      &__order
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+      &__price
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &__value
+        &--old
+          font-weight: 400
+          font-size: 14px
+          line-height: 18px
+          text-decoration-line: line-through
+        &--new
+          font-weight: 700
+          font-size: 24px
+          line-height: 30px
+  .secondary
+    &__image
+      min-width: 100%
+      max-width: 100%
+      height: 50%
+    &-booking
+      height: 50%
+  .offer
+    &__main
+      top: 30px
+      padding: 4px 9px
+      font-size: 8px
+      line-height: 10px
   .logo
     width: 99px
   .navbar-top
