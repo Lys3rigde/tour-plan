@@ -1742,6 +1742,11 @@ img {
   .container {
     max-width: 280px;
   }
+  .packages__title {
+    margin-bottom: 45px;
+    font-size: 28px;
+    line-height: 50px;
+  }
   .packages-wrapper {
     max-width: 100%;
     -ms-grid-rows: (500px)[5];
