@@ -941,7 +941,6 @@ img {
 }
 
 .main-booking {
-  max-width: 364px;
   background-color: #0A223D;
   color: #fff;
   padding: 46px 21px 30px 43px;
@@ -1773,7 +1772,7 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 280px;
+    max-width: 90%;
   }
   .packages__title {
     margin-bottom: 45px;
