@@ -7,10 +7,12 @@
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
+    grid-row-gap: 23px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
+    padding-bottom: 99px
   &__logo
-    width: 166px
+    width: 153px
     grid-row: 1 / 3
     align-self: stretch
   &__categories
@@ -26,11 +28,18 @@
       align-items: start
       grid-row: 2 / 4
       grid-column: span 2
+      padding-left: 7px
+  &__additional
+    margin-bottom: 3px
+    padding-left: 6px
+  &__legal
+    padding-left: 67px
   &__contact
     &-details
       grid-column: span 2
     &-form
       grid-column: span 2
+      padding-left: 20px
   &__form
     display: flex
     align-items: center
@@ -40,6 +49,8 @@
     padding: 0
     margin: 0
     list-style-type: none
+    font-size: 14px
+    line-height: 160%
   &__title
     font-weight: 700
     font-size: 18px
@@ -47,7 +58,7 @@
     margin: 0 0 16px 0
     text-transform: uppercase
     &--mb-3
-      margin-bottom: 30px
+      margin-bottom: 23px
     &--inline
       margin: 0 43px 0 0
   &__item
@@ -105,3 +116,19 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__disclaimer
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+  &__links
+    grid-column: 2 / 3
+    column-gap: 50px
+    justify-content: center
+    padding-left: 27px
+    &-disclaimer
+      font-size: 12px
+      line-height: 15px
+      justify-self: center
+      margin-right: 9px
+  &__payments
+    grid-column: 3 / 4
+    justify-self: end
