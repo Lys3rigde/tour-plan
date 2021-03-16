@@ -416,6 +416,10 @@ img {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1995,6 +1999,9 @@ img {
     max-width: 576px;
     width: 92%;
   }
+  body {
+    padding-top: 78px;
+  }
   .packages-wrapper {
     max-width: 576px;
   }
@@ -2007,8 +2014,65 @@ img {
     line-height: 18px;
     margin-bottom: 25px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar-bottom {
     display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 73px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
+    display: none;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 85%;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .menu-button {
     width: 16px;
@@ -2155,6 +2219,12 @@ img {
     padding: 4px 9px;
     font-size: 8px;
     line-height: 10px;
+  }
+  .navbar-bottom--visible {
+    padding-top: 9px;
+  }
+  .search__input {
+    margin-bottom: 25px;
   }
   .main {
     -webkit-box-orient: vertical;
