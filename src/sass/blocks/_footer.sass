@@ -7,7 +7,7 @@
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
-    grid-row-gap: 23px
+    grid-row-gap: 19px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
     padding-bottom: 99px
@@ -39,7 +39,7 @@
       grid-column: span 2
     &-form
       grid-column: span 2
-      padding-left: 20px
+      padding-left: 5px
   &__form
     display: flex
     align-items: center
@@ -58,7 +58,10 @@
     margin: 0 0 16px 0
     text-transform: uppercase
     &--mb-3
-      margin-bottom: 23px
+      padding-top: 12px
+      margin-bottom: 28px
+    &-contact
+      margin-bottom: 35px
     &--inline
       margin: 0 43px 0 0
   &__item
@@ -69,19 +72,25 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 20px
-    &--contact
+      margin-bottom: 18px
       display: -webkit-box
   &__icon
     &-wrapper
       min-width: 40px
       max-width: 40px
+      padding-top: 4px
   &__text
     color: $footer-text-color
     margin-bottom: 22px
+    font-size: 13.8px
+    line-height: 17px
   &__link
     text-decoration: none
     color: inherit
+    &-phone
+      white-space: nowrap
+      display: inline
+      height: 10px
   &__input
     background-color: $light
     border-radius: 4px
@@ -89,7 +98,7 @@
     padding: 0 23px
     height: 50px
     margin-bottom: 15px
-    flex-basis: 48%
+    flex-basis: 47%
   &__message
     width: 539px
     height: 123px
@@ -123,7 +132,7 @@
     grid-column: 2 / 3
     column-gap: 50px
     justify-content: center
-    padding-left: 27px
+    padding-left: 42px
     &-disclaimer
       font-size: 12px
       line-height: 15px
