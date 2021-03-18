@@ -22,7 +22,7 @@
     <header class="navbar navbar__mobile navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="src/img/horisontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -651,11 +651,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          class="subscribe newsletter__subscribe"
+          action="send.php"
+          method="POST"
+        >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -836,11 +841,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="src/img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__logo">
+            <img
+              src="src/img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title footer__title-categories">
               All Categories
@@ -993,22 +1000,23 @@
             <h3 class="footer__title footer__title-contact">
               Send us a message
             </h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
-                cols="30"
-                rows="10"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
