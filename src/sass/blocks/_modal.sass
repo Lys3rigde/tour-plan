@@ -59,7 +59,12 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-top: 15px
+    position: relative
+    &-group
+      position: relative
+      width: 100%
+      height: 50px
+      margin-top: 15px
   &__message
     width: 100%
     min-height: 123px
@@ -72,3 +77,9 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  label
+    position: absolute
+    font-size: 13px
+    border-bottom: none
+    bottom: -14px
+    left: 0

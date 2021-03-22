@@ -134,10 +134,11 @@ $(document).ready(() => {
           },
           email: {
             required: "We need your email address to contact you",
-            email: "Your email address must be in the format of name@domain.com"
+            email: "Please enter a valid e-mail"
           },
           phone: {
             required: "Please specify your phone",
+            minlength: "Phone number must be at least 11 digits"
           },
         }
       });
