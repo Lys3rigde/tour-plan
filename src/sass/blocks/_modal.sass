@@ -30,6 +30,19 @@
     &--visible
       visibility: visible
       opacity: 1
+      height: 80%
+      max-height: 510px
+      overflow: auto
+      &::-webkit-scrollbar
+        width: 10px
+      &::-webkit-scrollbar-track
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset
+        background-color: #f9f9fd
+        border-radius: 10px
+      &::-webkit-scrollbar-thumb
+        border-radius: 10px
+        background: linear-gradient(180deg, #00c6fb, #3bcef3)
+
   &__title
     font-weight: 700
     font-size: 18px
@@ -37,6 +50,8 @@
     margin-bottom: 15px
     text-transform: uppercase
     text-align: center
+    margin-top: 0
+    margin-bottom: 0
   &__close
     position: absolute
     right: 18px
@@ -45,11 +60,13 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
+  &__button
+    margin-top: 15px
   &__info
     font-weight: 700
     font-size: 12px

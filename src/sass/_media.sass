@@ -95,7 +95,7 @@
     padding: 92px 0 93px 0
   .activities
     padding-top: 45px
-    padding-bottom: 60px
+    padding-bottom: 51px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -113,8 +113,9 @@
     &__logo
       width: 95px
     &__input
-      flex-basis: 44%
-      margin-right: 28px
+      &-group
+        flex-basis: 44%
+        margin-right: 28px
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -315,10 +316,12 @@
     width: 49%
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 93%
   .modal
     &__dialog
       padding: 20px 40px
+      width: 80%
     &__title
       margin-top: 0
     &__input
@@ -495,6 +498,10 @@
       grid-row: 1
       grid-column: 1
       width: 95px
+    &__input
+      &-group
+        margin-right: 0
+        flex-basis: 100%
     &__title
       margin-bottom: 16px
       padding-top: 1px
@@ -571,8 +578,8 @@
     &__item
       &--mb-2
         margin-bottom: 21px
-    &__input
-      margin-right: 0
+      &-group
+        margin-right: 0
     &__message
       flex-basis: 100%
     &__info

@@ -372,10 +372,18 @@ button:hover {
 .input {
   background-color: #fff;
   border-radius: 4px;
-  outline: none;
-  border: none;
   padding: 0 23px;
   height: 50px;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea input {
+  outline: none;
+  border: none;
 }
 
 .message {
@@ -400,6 +408,11 @@ button:hover {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 .navbar {
@@ -1302,11 +1315,9 @@ button:hover {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -1316,6 +1327,7 @@ button:hover {
   font-size: 14px;
   line-height: 18px;
   color: #BDBDBD;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -1342,6 +1354,7 @@ button:hover {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .reviews {
@@ -1742,6 +1755,10 @@ button:hover {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1835,6 +1852,25 @@ button:hover {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  height: 80%;
+  max-height: 510px;
+  overflow: auto;
+}
+
+.modal__dialog--visible::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal__dialog--visible::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.modal__dialog--visible::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c6fb), to(#3bcef3));
+  background: linear-gradient(180deg, #00c6fb, #3bcef3);
 }
 
 .modal__title {
@@ -1844,6 +1880,8 @@ button:hover {
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .modal__close {
@@ -1856,13 +1894,17 @@ button:hover {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1999,7 +2041,7 @@ button:hover {
   }
   .activities {
     padding-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 51px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -2025,7 +2067,7 @@ button:hover {
   .footer__logo {
     width: 95px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
     margin-right: 28px;
@@ -2321,12 +2363,13 @@ button:hover {
   .card {
     width: 49%;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 93%;
+        flex-basis: 93%;
   }
   .modal__dialog {
     padding: 20px 40px;
+    width: 80%;
   }
   .modal__title {
     margin-top: 0;
@@ -2585,6 +2628,11 @@ button:hover {
     grid-column: 1;
     width: 95px;
   }
+  .footer__input-group {
+    margin-right: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__title {
     margin-bottom: 16px;
     padding-top: 1px;
@@ -2703,7 +2751,7 @@ button:hover {
   .footer__item--mb-2 {
     margin-bottom: 21px;
   }
-  .footer__input {
+  .footer__item-group {
     margin-right: 0;
   }
   .footer__message {
