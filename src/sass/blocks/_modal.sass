@@ -33,16 +33,15 @@
       height: 80%
       max-height: 510px
       overflow: auto
+      scrollbar-display: none
       &::-webkit-scrollbar
-        width: 10px
+        width: 15px
       &::-webkit-scrollbar-track
-        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset
-        background-color: #f9f9fd
-        border-radius: 10px
+        height: 104%
+        border-radius: 50%
       &::-webkit-scrollbar-thumb
-        border-radius: 10px
-        background: linear-gradient(180deg, #00c6fb, #3bcef3)
-
+        border-radius: 8px
+        background: linear-gradient(180deg, #0A223D, #EC1F46)
   &__title
     font-weight: 700
     font-size: 18px
@@ -65,6 +64,7 @@
     width: 100%
     min-height: 123px
     margin-top: 15px
+    resize: none
   &__button
     margin-top: 15px
   &__info
