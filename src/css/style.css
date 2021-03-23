@@ -780,6 +780,7 @@ textarea input {
   min-height: 210px;
   padding: 28px;
   padding-bottom: 27px;
+  padding-left: 27px;
 }
 
 .booking__info {
@@ -789,7 +790,7 @@ textarea input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6.6px;
 }
 
 .booking__price {
@@ -1036,7 +1037,8 @@ textarea input {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  padding: 10px 28px;
+  padding: 11px 28px;
+  margin-bottom: -3px;
 }
 
 .main-booking__title {
@@ -1164,7 +1166,8 @@ textarea input {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  padding: 10px 28px;
+  padding: 11.5px 28px;
+  margin-bottom: -4px;
 }
 
 .secondary-booking__wrapper {
@@ -1494,7 +1497,7 @@ textarea input {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 56px 0 98px 0;
 }
 
 .activities__title {
@@ -1573,7 +1576,7 @@ textarea input {
   font-size: 12px;
   line-height: 16px;
   color: #fff;
-  padding: 7px 22px;
+  padding: 7px 21px;
   border: none;
   background-color: #EC1F46;
   border-radius: 4px;
@@ -1810,6 +1813,7 @@ textarea input {
   grid-column: 3 / 4;
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-top: -5px;
 }
 
 .footer label {
@@ -2144,22 +2148,31 @@ textarea input {
     padding: 0;
   }
   .footer__title {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
     padding-top: 5px;
   }
   .footer__title--mb-3 {
     margin-bottom: 26px;
     padding-top: 4px;
+    padding-top: 9px;
   }
   .footer__title--inline {
     margin-bottom: 0;
+    padding-top: 0;
   }
   .footer__title-contact {
     padding-top: 0;
-    margin-bottom: 31px;
+    margin-bottom: 36px;
+    margin-top: -5px;
   }
   .footer__icon {
     margin-left: 3px;
+  }
+  .footer__icon-wrapper {
+    margin-right: 6px;
+  }
+  .footer__icon-map {
+    padding-left: 6px;
   }
   .footer__info {
     -ms-grid-column-align: end;
@@ -2415,6 +2428,9 @@ textarea input {
 }
 
 @media (max-width: 576px) {
+  .navbar--mobile-fixed {
+    max-width: 100vw;
+  }
   .container {
     max-width: 90%;
   }
@@ -2651,6 +2667,7 @@ textarea input {
     -ms-grid-column: 1;
     grid-column: 1;
     width: 95px;
+    margin-top: -2px;
   }
   .footer__input-group {
     margin-right: 0;
@@ -2662,7 +2679,7 @@ textarea input {
     padding-top: 1px;
   }
   .footer__title--inline {
-    margin-bottom: 27px;
+    margin-bottom: 22px;
     padding-top: 3px;
   }
   .footer__title-categories {
@@ -2672,7 +2689,7 @@ textarea input {
     margin-bottom: 25px;
   }
   .footer__title-contact {
-    padding-top: 5px;
+    padding-top: 11px;
     margin-bottom: 15px;
   }
   .footer__social-network {
@@ -2730,12 +2747,16 @@ textarea input {
     margin-bottom: 19px;
   }
   .footer__icon {
-    margin-top: 7px;
+    margin-top: 2px;
     margin-left: 1px;
   }
   .footer__icon-wrapper {
-    max-width: 33px;
-    min-width: 33px;
+    min-width: 30px;
+    max-width: 30px;
+    margin: 0;
+  }
+  .footer__icon-map {
+    padding-left: 2px;
   }
   .footer__message {
     margin-bottom: 17.5px;
@@ -2771,9 +2792,11 @@ textarea input {
     grid-column: 1;
     -ms-grid-column-align: start;
         justify-self: start;
+    margin-top: 3px;
+    padding-left: 3px;
   }
   .footer__item--mb-2 {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
   .footer__item-group {
     margin-right: 0;
