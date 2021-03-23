@@ -94,9 +94,11 @@
       height: 10px
   &__input
     width: 100%
+    position: relative
     &-group
       margin-bottom: 15px
       flex-basis: 47%
+      position: relative
   &__message
     flex-basis: 100%
     margin-bottom: 23px
@@ -122,3 +124,9 @@
   &__payments
     grid-column: 3 / 4
     justify-self: end
+  label
+    position: absolute
+    font-size: 13px
+    border-bottom: none
+    bottom: -14px
+    left: 0

@@ -1753,12 +1753,14 @@ textarea input {
 
 .footer__input {
   width: 100%;
+  position: relative;
 }
 
 .footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
+  position: relative;
 }
 
 .footer__message {
@@ -1808,6 +1810,14 @@ textarea input {
   grid-column: 3 / 4;
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+.footer label {
+  position: absolute;
+  font-size: 13px;
+  border-bottom: none;
+  bottom: -14px;
+  left: 0;
 }
 
 .modal__overlay {
