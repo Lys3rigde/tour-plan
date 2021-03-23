@@ -144,5 +144,11 @@ $(document).ready(() => {
       });
     });
     $('.phone').mask('+7 (000) 000-00-00');
-    AOS.init();
+    AOS.init({
+      disable: () => {
+        const maxWidth = 768;
+        return window.innerWidth < maxWidth;
+      }
+    });
+
 });
