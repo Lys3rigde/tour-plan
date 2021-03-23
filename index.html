@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="src/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/aos.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2144d927-be87-4d1b-aa3a-3f1003a7ae1c"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -279,6 +280,8 @@
         <div class="packages-wrapper">
           <div
             class="main packages-wrapper__main packages-wrapper__main--first"
+            data-aos="fade-right"
+            data-aos-duration="1100"
           >
             <span class="offer packages__offer-main">Flash Offer</span>
             <img
@@ -377,6 +380,9 @@
           </div>
           <div
             class="secondary packages-wrapper__secondary packages-wrapper__secondary--second"
+            data-aos="fade-left"
+            data-aos-duration="1100"
+            data-aos-delay="200"
           >
             <span class="offer packages__offer-secondary">Flash Offer</span>
             <img
@@ -445,6 +451,10 @@
           </div>
           <div
             class="secondary packages-wrapper__secondary packages-wrapper__secondary--third"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-duration="1100"
+            data-aos-delay="100"
           >
             <span class="offer packages__offer-secondary">Flash Offer</span>
             <img
@@ -513,6 +523,10 @@
           </div>
           <div
             class="secondary packages-wrapper__secondary packages-wrapper__secondary--fourth"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-duration="1100"
+            data-aos-delay="200"
           >
             <span class="offer packages__offer-secondary">Flash Offer</span>
             <img
@@ -581,6 +595,10 @@
           </div>
           <div
             class="secondary packages-wrapper__secondary packages-wrapper__secondary--fifth"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-duration="1100"
+            data-aos-delay="300"
           >
             <span class="offer packages__offer-secondary">Flash Offer</span>
             <img
@@ -659,7 +677,11 @@
       data-image-src="src/img/newsletter-bg.jpg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -667,6 +689,9 @@
           class="subscribe newsletter__subscribe form"
           action="send.php"
           method="POST"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="150"
         >
           <input
             type="email"
@@ -806,7 +831,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+          >
+            >
             <img
               src="src/img/activities/card-1.jpeg"
               alt="The curious corner of chamarel"
@@ -816,7 +846,12 @@
             <button data-toggle="modal" class="card-button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <img
               src="src/img/activities/card-2.jpeg"
               alt="Gymkhana club golf course"
@@ -826,7 +861,12 @@
             <button data-toggle="modal" class="card-button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
             <img
               src="src/img/activities/card-3.jpeg"
               alt="Tamarind falls hiking trip - full day"
@@ -836,7 +876,12 @@
             <button data-toggle="modal" class="card-button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+          >
             <img
               src="src/img/activities/card-4.jpeg"
               alt="The blue marine discovery quest"
@@ -859,6 +904,8 @@
               src="src/img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo footer__logo"
+              data-aos="fade-right"
+              data-aos-duration="1100"
             />
           </a>
           <div class="footer__list footer__categories">
@@ -1125,6 +1172,7 @@
     <script src="src/js/swiper-bundle.min.js"></script>
     <script src="src/js/jquery.mask.min.js"></script>
     <script src="src/js/jquery.validate.min.js"></script>
+    <script src="src/js/aos.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
