@@ -330,6 +330,8 @@
     &__dialog
       padding: 20px 40px
       width: 80%
+      &--visible
+        max-height: 480px
     &__title
       margin-top: 0
     &__input
@@ -496,6 +498,13 @@
       margin-bottom: 36px
       font-size: 18px
       line-height: 23px
+    &__card
+      &--second
+        order: 1
+      &--third
+        order: 2
+      &--fourth
+        order: 3
   .card
     width: 100%
   .footer
@@ -606,6 +615,8 @@
     &__dialog
       padding: 20px 30px
       width: 95%
+      &--visible
+        max-height: 460px
     &__title
       margin-top: 0
       font-size: 14px
