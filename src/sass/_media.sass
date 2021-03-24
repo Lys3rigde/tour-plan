@@ -178,10 +178,6 @@
         margin-right: 6px
       &-map
         padding-left: 6px
-    &__info
-      justify-self: end
-      text-align: end
-      width: 58%
     &__links
       grid-column: 1 / 3
       padding: 0
@@ -340,7 +336,11 @@
   .footer
     &__input
       &-group
-        flex-basis: 93%
+        flex-basis: 100%
+        margin-right: 0
+    &__message
+      flex-basis: 100%
+      margin-right: 0
     &__title
       font-size: 14px
       &-categories
@@ -349,6 +349,8 @@
       padding-left: 0
     &__legal
       padding-left: 0
+    &__form
+      justify-content: space-between
   .modal
     &__dialog
       padding: 20px 40px
