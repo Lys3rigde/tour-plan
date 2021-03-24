@@ -739,11 +739,31 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -775,8 +795,16 @@
                   <h3 class="reviews-slider__username">Dyadya Kolya</h3>
                   <span class="reviews-slider__date">Stayed 27 Oct, 2016</span>
                   <div class="reviews-slider__rating">
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -808,9 +836,21 @@
                   <h3 class="reviews-slider__username">Dyadya Tolya</h3>
                   <span class="reviews-slider__date">Stayed 14 Dec, 2017</span>
                   <div class="reviews-slider__rating">
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
-                    <img src="src/img/star.svg" alt="star" />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="stars__image"
+                      src="src/img/star.svg"
+                      alt="star"
+                    />
                   </div>
                   <!-- /.reviews-slider__rating -->
                 </div>
@@ -866,7 +906,7 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card activities__card--third""
+            class="card activities__card activities__card--third"
             data-aos="flip-left"
             data-aos-duration="1000"
             data-aos-delay="400"
@@ -909,7 +949,9 @@
               alt="The blue marine discovery quest"
               class="card__image"
             />
-            <h3 class="card__title card__title--fourth">The blue marine discovery quest</h3>
+            <h3 class="card__title card__title--fourth">
+              The blue marine discovery quest
+            </h3>
             <button data-toggle="modal" class="card-button">Book Now</button>
           </div>
           <!-- /.card -->
@@ -993,13 +1035,28 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://facebook.com" class="footer__link">
+              <a
+                href="https://facebook.com"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
                 <img src="src/img/fb.svg" alt="icon: facebook" />
               </a>
-              <a href="https://youtube.com" class="footer__link">
+              <a
+                href="https://youtube.com"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
                 <img src="src/img/yt.svg" alt="icon: youtube" />
               </a>
-              <a href="https://instagram.com" class="footer__link">
+              <a
+                href="https://instagram.com"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
                 <img src="src/img/inst.svg" alt="icon: instagram" />
               </a>
             </div>
@@ -1052,10 +1109,10 @@
                 </div>
                 <!-- /.footer__icon-wrapper -->
                 Tel (business hours):
-                <a href="tel:2691500" class="footer__link">269 1500</a>
+                <a href="tel:2691500" class="footer__link">269&nbsp;1500</a>
                 <br />
                 Tel (hotline) Monday - Saturday:
-                <a href="tel:52566138" class="footer__link">52-56-61-38</a>
+                <a href="tel:52566138" class="footer__link">52‑56-61-38</a>
                 (08:00 am – 20:00 pm)
                 <br />
                 Tel (hotline) Sunday:
@@ -1108,6 +1165,7 @@
               <textarea
                 class="message footer__message"
                 placeholder="Message"
+                qrw
                 name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
@@ -1144,7 +1202,7 @@
         <a href="#" class="modal__close">
           <img src="src/img/close.svg" alt="Icon: CLose" />
         </a>
-        <h3 class="modal__title">Send us a message</h3>
+        <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <div class="modal__input-group">
             <input
@@ -1183,8 +1241,11 @@
             placeholder="Message"
             name="message"
           ></textarea>
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <div class="modal__submit">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+          <!-- /.modal__submit -->
         </form>
       </div>
       <!-- /.modal__dialog -->
